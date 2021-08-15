@@ -18,7 +18,7 @@ chart_type = st.sidebar.radio('Choose chart type', ['scatterplot', 'boxplot'])
 variable = st.sidebar.radio('Choose variable', ['sepal', 'petal'])
 
 ### Add the app title
-st.title('Iris Dataset Visualization')
+#st.title('Iris Dataset Visualization')
 
 
 ### Visualize ###
