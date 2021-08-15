@@ -3,7 +3,7 @@ import plotly.express as px
 from sklearn.datasets import load_iris
 
 
-# Get the data
+### Get the data ###
 df = load_iris(as_frame=True).frame
 # Rename columns
 df = df.rename(columns=lambda x: '_'.join(x.split()[:2]))
@@ -16,6 +16,7 @@ iris_type = st.sidebar.radio('Choose iris type', [0, 1, 2])
 chart_type = st.sidebar.radio('Choose chart type', ['scatterplot', 'boxplot'])
 # Variable selector
 variable = st.sidebar.radio('Choose variable', ['sepal', 'petal'])
+
 
 ### Add the app title
 #st.title('Iris Dataset Visualization')
